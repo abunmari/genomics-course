@@ -1,5 +1,5 @@
 ---
-title: "index"
+title: "Evolutionary Genomics * Bioinformatics"
 author: "Marisa Abundis"
 date: "August 31, 2020"
 output: html_document
