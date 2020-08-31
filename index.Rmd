@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Hi, this is me creating an index file !!!
+*1 : [Introduction to R and Reproducible Research](lab1_marisaabundis.html)
 
 ## R Markdown
 
