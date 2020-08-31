@@ -14,4 +14,4 @@ knitr::opts_chunk$set(echo = TRUE)
 ### [Lab 1: Intro to R](lab1_marisaabundis.html)
 
 
-#REFERENCES
+# REFERENCES
