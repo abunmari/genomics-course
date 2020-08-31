@@ -1,2 +1,2 @@
 # genomics-course
-### stream chromatica :) 
+### BIO 597GE
