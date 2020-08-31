@@ -9,9 +9,14 @@ bibliography: data/references.bib
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-## Lab Files
+![](images/bunnyPortraitIcon.png)
 
-### [Lab 1: Intro to R](lab1_marisaabundis.html)
+## **LAB FILES**
 
 
-# REFERENCES
+* Lab 1 : [Intro to R](lab1_marisaabundis.html)
+
+*Application written in R [@RCoreTeam] using the Shiny framework [@Chang2015].*
+
+
+## **REFERENCES**
