@@ -14,8 +14,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ## **LAB FILES**
 
 
-* Lab 1 : [Intro to R](lab1_marisaabundis.html)
-* Lab 2 : [Git, Github, and Rstudio Projects](lab2_MarisaAbundis.html)
+* Lab 1 : [Intro to R](labs/lab1_marisaabundis.html)
+* Lab 2 : [Git, Github, and Rstudio Projects](labs/lab2_MarisaAbundis.html)
 
 *Application written in R [@RCoreTeam] using the Shiny framework [@Chang2015].*
 
