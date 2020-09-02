@@ -1,5 +1,5 @@
 ---
-title: "Lab2_MarisaAbundis"
+title: "Lab2_marisaabundis"
 author: "Marisa Abundis"
 date: "September 2, 2020"
 output: html_document
