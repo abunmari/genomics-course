@@ -40,4 +40,7 @@ x/(sum(x))
 nucleotides <- c("A","T","C","G")
 sort(nucleotides)
 ```
+
+Application written in R [@RCoreTeam] using the Shiny framework [@Chang2015].
+
 # REFERENCES
