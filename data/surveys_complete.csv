@@ -1621,7 +1621,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 33836,4,17,2002,2,DO,F,36,50,Dipodomys,ordii,Rodent,Control
 33960,5,15,2002,2,DO,M,37,52,Dipodomys,ordii,Rodent,Control
 34431,7,13,2002,2,DO,M,36,49,Dipodomys,ordii,Rodent,Control
-242,9,13,1977,2,OX,M,19,22,Onychomys,sp.,Rodent,Control
 274,10,16,1977,2,OL,F,20,21,Onychomys,leucogaster,Rodent,Control
 1543,12,3,1978,2,OL,F,22,38,Onychomys,leucogaster,Rodent,Control
 1544,12,3,1978,2,OL,M,21,32,Onychomys,leucogaster,Rodent,Control
@@ -1783,15 +1782,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 29309,3,14,1999,2,PM,F,20,23,Peromyscus,maniculatus,Rodent,Control
 29569,5,15,1999,2,PM,F,20,21,Peromyscus,maniculatus,Rodent,Control
 16382,7,30,1989,2,RF,F,17,16,Reithrodontomys,fulvescens,Rodent,Control
-19121,10,10,1991,2,BA,M,13,6,Baiomys,taylori,Rodent,Control
-35402,12,29,2002,2,RO,F,15,12,Reithrodontomys,montanus,Rodent,Control
-19217,11,13,1991,2,SO,F,21,42,Sigmodon,ochrognathus,Rodent,Control
-19655,2,6,1992,2,SO,F,26,51,Sigmodon,ochrognathus,Rodent,Control
-19961,5,2,1992,2,SO,F,30,82,Sigmodon,ochrognathus,Rodent,Control
-20267,8,29,1992,2,SO,F,25,15,Sigmodon,ochrognathus,Rodent,Control
-21226,11,13,1993,2,SO,F,25,70,Sigmodon,ochrognathus,Rodent,Control
-25790,5,10,1997,2,SO,F,28,100,Sigmodon,ochrognathus,Rodent,Control
-25820,5,10,1997,2,SO,F,22,21,Sigmodon,ochrognathus,Rodent,Control
 23239,1,27,1996,2,PB,M,29,46,Chaetodipus,baileyi,Rodent,Control
 24052,6,13,1996,2,PB,M,26,26,Chaetodipus,baileyi,Rodent,Control
 24216,7,20,1996,2,PB,F,26,24,Chaetodipus,baileyi,Rodent,Control
@@ -2935,7 +2925,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 34065,5,16,2002,3,DO,M,36,32,Dipodomys,ordii,Rodent,Long-term Krat Exclosure
 34066,5,16,2002,3,DO,M,37,29,Dipodomys,ordii,Rodent,Long-term Krat Exclosure
 34288,6,16,2002,3,DO,F,35,55,Dipodomys,ordii,Rodent,Long-term Krat Exclosure
-70,8,19,1977,3,OX,F,21,22,Onychomys,sp.,Rodent,Long-term Krat Exclosure
 1880,7,4,1979,3,OL,F,19,21,Onychomys,leucogaster,Rodent,Long-term Krat Exclosure
 1950,7,26,1979,3,OL,F,20,31,Onychomys,leucogaster,Rodent,Long-term Krat Exclosure
 1952,7,26,1979,3,OL,M,20,35,Onychomys,leucogaster,Rodent,Long-term Krat Exclosure
@@ -3233,49 +3222,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 15138,11,6,1988,3,RF,F,18,16,Reithrodontomys,fulvescens,Rodent,Long-term Krat Exclosure
 16519,10,7,1989,3,RF,F,18,16,Reithrodontomys,fulvescens,Rodent,Long-term Krat Exclosure
 25594,4,13,1997,3,RF,F,17,20,Reithrodontomys,fulvescens,Rodent,Long-term Krat Exclosure
-9576,9,30,1984,3,PH,F,26,28,Perognathus,hispidus,Rodent,Long-term Krat Exclosure
-16854,12,5,1989,3,BA,M,14,8,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-17486,4,26,1990,3,BA,M,14,7,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-17566,5,25,1990,3,BA,F,14,10,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-17616,6,22,1990,3,BA,F,14,8,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-17773,8,17,1990,3,BA,F,15,9,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-17935,10,16,1990,3,BA,F,13,8,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-18132,12,16,1990,3,BA,F,13,8,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-18252,1,12,1991,3,BA,F,14,9,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-18509,3,14,1991,3,BA,F,14,8,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-18604,4,21,1991,3,BA,F,13,10,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-18687,5,14,1991,3,BA,F,11,8,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-18778,6,14,1991,3,BA,F,12,9,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-18855,7,13,1991,3,BA,F,14,13,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-19256,11,14,1991,3,BA,F,16,9,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-19274,11,14,1991,3,BA,F,12,8,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-19499,12,8,1991,3,BA,M,13,8,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-19514,12,8,1991,3,BA,M,14,8,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-19698,2,7,1992,3,BA,M,12,7,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-20688,2,26,1993,3,SF,F,26,61,Sigmodon,fulviventer,Rodent,Long-term Krat Exclosure
-19270,11,14,1991,3,SO,F,27,78,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-19283,11,14,1991,3,SO,F,27,27,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-19284,11,14,1991,3,SO,F,24,26,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-19309,11,14,1991,3,SO,M,27,49,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-19461,12,8,1991,3,SO,F,25,47,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-19472,12,8,1991,3,SO,F,24,44,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-19633,1,9,1992,3,SO,F,24,38,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-19699,2,7,1992,3,SO,M,26,49,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-19732,2,7,1992,3,SO,F,25,37,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-19733,2,7,1992,3,SO,F,25,39,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-19783,3,7,1992,3,SO,M,25,58,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-19827,3,7,1992,3,SO,F,25,39,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-19903,4,5,1992,3,SO,M,26,68,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-19972,5,3,1992,3,SO,F,24,28,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-19978,5,3,1992,3,SO,F,27,105,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-20047,5,31,1992,3,SO,M,26,54,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-20817,4,24,1993,3,SO,F,35,48,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-20869,5,23,1993,3,SO,M,26,76,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-21006,7,15,1993,3,SO,F,15,49,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-21360,2,2,1994,3,SO,F,36,44,Sigmodon,ochrognathus,Rodent,Long-term Krat Exclosure
-32708,9,23,2001,3,PI,M,23,17,Chaetodipus,intermedius,Rodent,Long-term Krat Exclosure
-32904,10,14,2001,3,PI,M,23,19,Chaetodipus,intermedius,Rodent,Long-term Krat Exclosure
-34295,6,16,2002,3,PI,M,22,21,Chaetodipus,intermedius,Rodent,Long-term Krat Exclosure
 24480,9,22,1996,3,PB,F,27,26,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
 24621,10,13,1996,3,PB,F,27,30,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
 24737,11,17,1996,3,PB,F,27,33,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
@@ -3608,8 +3554,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 35492,12,31,2002,3,PB,F,26,26,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
 35493,12,31,2002,3,PB,F,26,34,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
 35494,12,31,2002,3,PB,M,28,43,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
-26701,7,30,1997,3,PL,M,21,19,Peromyscus,leucopus,Rodent,Long-term Krat Exclosure
-27386,12,29,1997,3,PL,M,20,17,Peromyscus,leucopus,Rodent,Long-term Krat Exclosure
 1168,8,5,1978,15,NL,F,31,196,Neotoma,albigula,Rodent,Long-term Krat Exclosure
 4692,7,30,1981,15,NL,M,33,174,Neotoma,albigula,Rodent,Long-term Krat Exclosure
 5797,4,29,1982,15,NL,M,31,129,Neotoma,albigula,Rodent,Long-term Krat Exclosure
@@ -4350,8 +4294,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 28472,8,23,1998,15,PM,M,20,20,Peromyscus,maniculatus,Rodent,Long-term Krat Exclosure
 29414,3,15,1999,15,PM,F,21,28,Peromyscus,maniculatus,Rodent,Long-term Krat Exclosure
 7029,11,21,1982,15,RF,M,16,11,Reithrodontomys,fulvescens,Rodent,Long-term Krat Exclosure
-18898,7,13,1991,15,SF,F,36,52,Sigmodon,fulviventer,Rodent,Long-term Krat Exclosure
-35539,12,31,2002,15,SF,M,26,68,Sigmodon,fulviventer,Rodent,Long-term Krat Exclosure
 26192,6,11,1997,15,PB,F,26,25,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
 26313,7,9,1997,15,PB,F,26,21,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
 26411,7,9,1997,15,PB,F,26,28,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
@@ -4432,9 +4374,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 35541,12,31,2002,15,PB,F,24,31,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
 35542,12,31,2002,15,PB,F,26,29,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
 35543,12,31,2002,15,PB,F,27,34,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
-27393,12,29,1997,15,PL,M,19,16,Peromyscus,leucopus,Rodent,Long-term Krat Exclosure
-27481,2,1,1998,15,PL,M,19,18,Peromyscus,leucopus,Rodent,Long-term Krat Exclosure
-27801,5,3,1998,15,PL,M,21,22,Peromyscus,leucopus,Rodent,Long-term Krat Exclosure
 971,6,8,1978,17,NL,F,32,135,Neotoma,albigula,Rodent,Control
 1146,8,4,1978,17,NL,F,32,149,Neotoma,albigula,Rodent,Control
 1993,8,22,1979,17,NL,F,30,105,Neotoma,albigula,Rodent,Control
@@ -8123,7 +8062,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 35411,12,29,2002,12,DO,M,35,58,Dipodomys,ordii,Rodent,Control
 35413,12,29,2002,12,DO,F,36,49,Dipodomys,ordii,Rodent,Control
 35414,12,29,2002,12,DO,M,37,51,Dipodomys,ordii,Rodent,Control
-16235,7,3,1989,12,OX,M,21,20,Onychomys,sp.,Rodent,Control
 2212,11,18,1979,12,OL,M,21,29,Onychomys,leucogaster,Rodent,Control
 3828,1,31,1981,12,OL,M,21,42,Onychomys,leucogaster,Rodent,Control
 3992,3,9,1981,12,OL,M,23,39,Onychomys,leucogaster,Rodent,Control
@@ -8307,20 +8245,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 16264,7,3,1989,12,RF,F,18,14,Reithrodontomys,fulvescens,Rodent,Control
 16607,11,4,1989,12,RF,F,17,17,Reithrodontomys,fulvescens,Rodent,Control
 16749,12,4,1989,12,RF,F,18,15,Reithrodontomys,fulvescens,Rodent,Control
-16745,12,4,1989,12,SF,F,27,82,Sigmodon,fulviventer,Rodent,Control
-16885,1,6,1990,12,SF,M,25,35,Sigmodon,fulviventer,Rodent,Control
-16887,1,6,1990,12,SF,M,28,44,Sigmodon,fulviventer,Rodent,Control
-16895,1,6,1990,12,SF,F,27,75,Sigmodon,fulviventer,Rodent,Control
-16990,1,29,1990,12,SF,M,28,48,Sigmodon,fulviventer,Rodent,Control
-17127,2,24,1990,12,SF,F,26,81,Sigmodon,fulviventer,Rodent,Control
-17131,2,24,1990,12,SF,M,26,48,Sigmodon,fulviventer,Rodent,Control
-17153,2,24,1990,12,SF,M,25,36,Sigmodon,fulviventer,Rodent,Control
-17257,3,29,1990,12,SF,M,28,52,Sigmodon,fulviventer,Rodent,Control
-17260,3,29,1990,12,SF,M,30,58,Sigmodon,fulviventer,Rodent,Control
-35033,11,9,2002,12,SF,M,27,92,Sigmodon,fulviventer,Rodent,Control
-33769,4,16,2002,12,PI,M,22,18,Chaetodipus,intermedius,Rodent,Control
-34441,7,13,2002,12,PI,M,22,20,Chaetodipus,intermedius,Rodent,Control
-34674,9,8,2002,12,PI,M,22,21,Chaetodipus,intermedius,Rodent,Control
 24397,9,21,1996,12,PB,M,26,31,Chaetodipus,baileyi,Rodent,Control
 25447,4,12,1997,12,PB,M,27,23,Chaetodipus,baileyi,Rodent,Control
 28343,8,22,1998,12,PB,M,26,28,Chaetodipus,baileyi,Rodent,Control
@@ -9369,13 +9293,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 29460,4,17,1999,18,PM,F,20,21,Peromyscus,maniculatus,Rodent,Short-term Krat Exclosure
 16089,6,3,1989,18,RF,M,17,11,Reithrodontomys,fulvescens,Rodent,Short-term Krat Exclosure
 17014,1,29,1990,18,RF,F,18,12,Reithrodontomys,fulvescens,Rodent,Short-term Krat Exclosure
-25811,5,10,1997,18,PH,M,23,22,Perognathus,hispidus,Rodent,Short-term Krat Exclosure
-18768,6,13,1991,18,BA,F,12,9,Baiomys,taylori,Rodent,Short-term Krat Exclosure
-18935,8,7,1991,18,BA,F,14,10,Baiomys,taylori,Rodent,Short-term Krat Exclosure
-19546,1,8,1992,18,SF,M,22,35,Sigmodon,fulviventer,Rodent,Short-term Krat Exclosure
-20902,6,18,1993,18,SF,M,22,24,Sigmodon,fulviventer,Rodent,Short-term Krat Exclosure
-20991,7,14,1993,18,SF,M,25,47,Sigmodon,fulviventer,Rodent,Short-term Krat Exclosure
-25703,5,10,1997,18,SO,F,27,43,Sigmodon,ochrognathus,Rodent,Short-term Krat Exclosure
 26407,7,9,1997,18,PB,F,26,29,Chaetodipus,baileyi,Rodent,Short-term Krat Exclosure
 26821,9,27,1997,18,PB,F,26,28,Chaetodipus,baileyi,Rodent,Short-term Krat Exclosure
 26828,9,27,1997,18,PB,F,25,29,Chaetodipus,baileyi,Rodent,Short-term Krat Exclosure
@@ -11282,13 +11199,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 26944,9,28,1997,11,PM,F,21,30,Peromyscus,maniculatus,Rodent,Control
 26950,9,28,1997,11,PM,M,21,20,Peromyscus,maniculatus,Rodent,Control
 15242,12,14,1988,11,RF,M,17,14,Reithrodontomys,fulvescens,Rodent,Control
-15121,11,6,1988,11,PH,M,26,33,Perognathus,hispidus,Rodent,Control
-16669,11,5,1989,11,SF,F,27,46,Sigmodon,fulviventer,Rodent,Control
-16819,12,5,1989,11,SF,F,26,47,Sigmodon,fulviventer,Rodent,Control
-17436,4,26,1990,11,SF,M,21,47,Sigmodon,fulviventer,Rodent,Control
-17437,4,26,1990,11,SF,M,21,54,Sigmodon,fulviventer,Rodent,Control
-35334,12,8,2002,11,SF,F,27,82,Sigmodon,fulviventer,Rodent,Control
-20389,9,27,1992,11,SO,F,25,72,Sigmodon,ochrognathus,Rodent,Control
 25872,5,11,1997,11,PB,M,26,22,Chaetodipus,baileyi,Rodent,Control
 26425,7,9,1997,11,PB,M,26,30,Chaetodipus,baileyi,Rodent,Control
 26689,7,30,1997,11,PB,M,27,34,Chaetodipus,baileyi,Rodent,Control
@@ -12339,13 +12249,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 15921,4,2,1989,20,RF,F,17,13,Reithrodontomys,fulvescens,Rodent,Short-term Krat Exclosure
 15929,4,2,1989,20,RF,F,17,11,Reithrodontomys,fulvescens,Rodent,Short-term Krat Exclosure
 15991,5,9,1989,20,RF,F,18,13,Reithrodontomys,fulvescens,Rodent,Short-term Krat Exclosure
-19109,10,10,1991,20,BA,F,13,6,Baiomys,taylori,Rodent,Short-term Krat Exclosure
-19125,10,10,1991,20,SO,F,30,80,Sigmodon,ochrognathus,Rodent,Short-term Krat Exclosure
-19280,11,14,1991,20,SO,M,24,38,Sigmodon,ochrognathus,Rodent,Short-term Krat Exclosure
-19301,11,14,1991,20,SO,F,29,82,Sigmodon,ochrognathus,Rodent,Short-term Krat Exclosure
-19418,12,7,1991,20,SO,F,28,80,Sigmodon,ochrognathus,Rodent,Short-term Krat Exclosure
-19690,2,7,1992,20,SO,F,22,77,Sigmodon,ochrognathus,Rodent,Short-term Krat Exclosure
-20173,7,30,1992,20,SO,F,25,41,Sigmodon,ochrognathus,Rodent,Short-term Krat Exclosure
 24444,9,21,1996,20,PB,M,26,25,Chaetodipus,baileyi,Rodent,Short-term Krat Exclosure
 24586,10,12,1996,20,PB,M,27,31,Chaetodipus,baileyi,Rodent,Short-term Krat Exclosure
 26217,6,11,1997,20,PB,M,28,30,Chaetodipus,baileyi,Rodent,Short-term Krat Exclosure
@@ -13450,16 +13353,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 25688,5,10,1997,22,PM,F,21,29,Peromyscus,maniculatus,Rodent,Control
 26287,7,9,1997,22,PM,F,19,15,Peromyscus,maniculatus,Rodent,Control
 26782,9,27,1997,22,PM,M,20,18,Peromyscus,maniculatus,Rodent,Control
-16629,11,4,1989,22,PH,F,26,29,Perognathus,hispidus,Rodent,Control
-16789,12,4,1989,22,PH,F,27,32,Perognathus,hispidus,Rodent,Control
-17024,1,29,1990,22,PH,F,28,33,Perognathus,hispidus,Rodent,Control
-17155,2,24,1990,22,PH,F,27,33,Perognathus,hispidus,Rodent,Control
-17272,3,29,1990,22,PH,F,27,34,Perognathus,hispidus,Rodent,Control
-17399,4,24,1990,22,PH,F,27,34,Perognathus,hispidus,Rodent,Control
-17505,5,23,1990,22,PH,F,26,34,Perognathus,hispidus,Rodent,Control
-17680,7,21,1990,22,PH,F,28,32,Perognathus,hispidus,Rodent,Control
-17683,7,21,1990,22,PH,F,25,18,Perognathus,hispidus,Rodent,Control
-35475,12,29,2002,22,SF,M,25,50,Sigmodon,fulviventer,Rodent,Control
 24451,9,21,1996,22,PB,M,28,40,Chaetodipus,baileyi,Rodent,Control
 24584,10,12,1996,22,PB,M,27,35,Chaetodipus,baileyi,Rodent,Control
 24853,12,18,1996,22,PB,M,26,45,Chaetodipus,baileyi,Rodent,Control
@@ -15206,7 +15099,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 32023,4,22,2001,14,DO,F,35,52,Dipodomys,ordii,Rodent,Control
 32132,5,27,2001,14,DO,M,35,56,Dipodomys,ordii,Rodent,Control
 32338,7,22,2001,14,DO,M,38,45,Dipodomys,ordii,Rodent,Control
-9209,5,27,1984,14,OX,M,20,18,Onychomys,sp.,Rodent,Control
 1968,8,21,1979,14,OL,F,20,24,Onychomys,leucogaster,Rodent,Control
 1969,8,21,1979,14,OL,M,20,35,Onychomys,leucogaster,Rodent,Control
 2067,9,23,1979,14,OL,F,19,31,Onychomys,leucogaster,Rodent,Control
@@ -15347,12 +15239,10 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 27119,10,26,1997,14,PM,M,20,14,Peromyscus,maniculatus,Rodent,Control
 28470,8,23,1998,14,PM,F,20,19,Peromyscus,maniculatus,Rodent,Control
 32024,4,22,2001,14,PM,F,20,31,Peromyscus,maniculatus,Rodent,Control
-9476,8,25,1984,14,PH,M,27,31,Perognathus,hispidus,Rodent,Control
 26196,6,11,1997,14,PB,F,25,25,Chaetodipus,baileyi,Rodent,Control
 31068,7,2,2000,14,PB,M,24,24,Chaetodipus,baileyi,Rodent,Control
 32345,7,22,2001,14,PB,M,24,14,Chaetodipus,baileyi,Rodent,Control
 32569,8,26,2001,14,PB,M,28,29,Chaetodipus,baileyi,Rodent,Control
-25134,2,9,1997,14,PL,M,21,23,Peromyscus,leucopus,Rodent,Control
 875,5,17,1978,5,NL,F,33,212,Neotoma,albigula,Rodent,Rodent Exclosure
 2346,1,16,1980,5,NL,M,35,239,Neotoma,albigula,Rodent,Rodent Exclosure
 4837,9,30,1981,5,NL,F,32,185,Neotoma,albigula,Rodent,Rodent Exclosure
@@ -16379,14 +16269,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 16872,12,5,1989,5,RF,F,18,13,Reithrodontomys,fulvescens,Rodent,Rodent Exclosure
 16931,1,7,1990,5,RF,M,18,13,Reithrodontomys,fulvescens,Rodent,Rodent Exclosure
 17104,1,30,1990,5,RF,F,17,14,Reithrodontomys,fulvescens,Rodent,Rodent Exclosure
-9502,8,26,1984,5,PH,M,28,29,Perognathus,hispidus,Rodent,Rodent Exclosure
-16951,1,7,1990,5,BA,F,13,9,Baiomys,taylori,Rodent,Rodent Exclosure
-17174,2,25,1990,5,BA,M,14,7,Baiomys,taylori,Rodent,Rodent Exclosure
-17190,2,25,1990,5,BA,F,14,7,Baiomys,taylori,Rodent,Rodent Exclosure
-19474,12,8,1991,5,BA,F,13,8,Baiomys,taylori,Rodent,Rodent Exclosure
-33556,2,10,2002,5,RO,M,15,9,Reithrodontomys,montanus,Rodent,Rodent Exclosure
-25122,2,9,1997,5,RX,M,17,11,Reithrodontomys,sp.,Rodent,Rodent Exclosure
-26921,9,28,1997,5,PL,M,22,20,Peromyscus,leucopus,Rodent,Rodent Exclosure
 2350,1,16,1980,6,NL,M,35,241,Neotoma,albigula,Rodent,Short-term Krat Exclosure
 5195,1,1,1982,6,NL,M,35,152,Neotoma,albigula,Rodent,Short-term Krat Exclosure
 7902,5,15,1983,6,NL,F,31,116,Neotoma,albigula,Rodent,Short-term Krat Exclosure
@@ -17532,7 +17414,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 15908,4,1,1989,6,RF,F,16,12,Reithrodontomys,fulvescens,Rodent,Short-term Krat Exclosure
 16079,5,11,1989,6,RF,F,17,10,Reithrodontomys,fulvescens,Rodent,Short-term Krat Exclosure
 16131,6,3,1989,6,RF,F,17,10,Reithrodontomys,fulvescens,Rodent,Short-term Krat Exclosure
-20960,6,19,1993,6,SO,M,26,35,Sigmodon,ochrognathus,Rodent,Short-term Krat Exclosure
 22948,10,29,1995,6,PB,F,27,29,Chaetodipus,baileyi,Rodent,Short-term Krat Exclosure
 24521,9,22,1996,6,PB,F,26,29,Chaetodipus,baileyi,Rodent,Short-term Krat Exclosure
 24724,11,17,1996,6,PB,F,27,29,Chaetodipus,baileyi,Rodent,Short-term Krat Exclosure
@@ -19453,7 +19334,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 26461,7,9,1997,4,PM,M,21,19,Peromyscus,maniculatus,Rodent,Control
 27070,10,26,1997,4,PM,F,22,30,Peromyscus,maniculatus,Rodent,Control
 29641,5,16,1999,4,PM,M,21,23,Peromyscus,maniculatus,Rodent,Control
-34549,7,14,2002,4,PI,M,23,20,Chaetodipus,intermedius,Rodent,Control
 25942,6,9,1997,4,PB,M,27,28,Chaetodipus,baileyi,Rodent,Control
 26903,9,28,1997,4,PB,F,25,30,Chaetodipus,baileyi,Rodent,Control
 28424,8,23,1998,4,PB,M,28,32,Chaetodipus,baileyi,Rodent,Control
@@ -20601,12 +20481,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 16938,1,7,1990,13,RF,F,18,14,Reithrodontomys,fulvescens,Rodent,Short-term Krat Exclosure
 17112,1,30,1990,13,RF,F,18,13,Reithrodontomys,fulvescens,Rodent,Short-term Krat Exclosure
 17312,3,30,1990,13,RF,F,18,15,Reithrodontomys,fulvescens,Rodent,Short-term Krat Exclosure
-19590,1,9,1992,13,PH,F,24,29,Perognathus,hispidus,Rodent,Short-term Krat Exclosure
-19744,2,8,1992,13,PH,F,25,29,Perognathus,hispidus,Rodent,Short-term Krat Exclosure
-19857,3,8,1992,13,PH,F,26,29,Perognathus,hispidus,Rodent,Short-term Krat Exclosure
-19906,4,5,1992,13,PH,M,22,18,Perognathus,hispidus,Rodent,Short-term Krat Exclosure
-19917,4,5,1992,13,PH,M,25,34,Perognathus,hispidus,Rodent,Short-term Krat Exclosure
-20156,7,4,1992,13,SO,F,18,74,Sigmodon,ochrognathus,Rodent,Short-term Krat Exclosure
 25630,4,13,1997,13,PB,F,25,26,Chaetodipus,baileyi,Rodent,Short-term Krat Exclosure
 25873,5,11,1997,13,PB,M,27,23,Chaetodipus,baileyi,Rodent,Short-term Krat Exclosure
 26175,6,11,1997,13,PB,F,26,19,Chaetodipus,baileyi,Rodent,Short-term Krat Exclosure
@@ -20828,7 +20702,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 35361,12,8,2002,13,PB,M,25,42,Chaetodipus,baileyi,Rodent,Short-term Krat Exclosure
 35363,12,8,2002,13,PB,F,26,35,Chaetodipus,baileyi,Rodent,Short-term Krat Exclosure
 35529,12,31,2002,13,PB,F,25,25,Chaetodipus,baileyi,Rodent,Short-term Krat Exclosure
-25137,2,9,1997,13,PX,M,20,18,Chaetodipus,sp.,Rodent,Short-term Krat Exclosure
 2231,11,18,1979,19,NL,F,33,122,Neotoma,albigula,Rodent,Long-term Krat Exclosure
 8288,9,10,1983,19,NL,F,31,139,Neotoma,albigula,Rodent,Long-term Krat Exclosure
 18823,7,12,1991,19,NL,M,32,99,Neotoma,albigula,Rodent,Long-term Krat Exclosure
@@ -21297,7 +21170,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 34809,10,5,2002,19,OT,F,20,30,Onychomys,torridus,Rodent,Long-term Krat Exclosure
 35020,11,9,2002,19,OT,F,20,12,Onychomys,torridus,Rodent,Long-term Krat Exclosure
 3626,12,16,1980,19,DO,M,34,52,Dipodomys,ordii,Rodent,Long-term Krat Exclosure
-6609,9,19,1982,19,OX,M,21,24,Onychomys,sp.,Rodent,Long-term Krat Exclosure
 2103,10,24,1979,19,OL,M,21,27,Onychomys,leucogaster,Rodent,Long-term Krat Exclosure
 6653,10,23,1982,19,OL,M,22,36,Onychomys,leucogaster,Rodent,Long-term Krat Exclosure
 6659,10,23,1982,19,OL,F,21,31,Onychomys,leucogaster,Rodent,Long-term Krat Exclosure
@@ -21591,29 +21463,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 29587,5,15,1999,19,PM,M,20,20,Peromyscus,maniculatus,Rodent,Long-term Krat Exclosure
 14062,2,21,1988,19,RF,F,17,11,Reithrodontomys,fulvescens,Rodent,Long-term Krat Exclosure
 14257,3,20,1988,19,RF,F,19,12,Reithrodontomys,fulvescens,Rodent,Long-term Krat Exclosure
-18085,12,15,1990,19,BA,F,14,8,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-18323,2,16,1991,19,BA,F,14,18,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-18574,4,19,1991,19,BA,F,12,12,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-18666,5,13,1991,19,BA,F,12,7,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-18828,7,12,1991,19,BA,F,14,11,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-19015,9,9,1991,19,BA,F,7,11,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-19220,11,13,1991,19,BA,F,14,10,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-19249,11,13,1991,19,BA,M,12,8,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-19380,12,7,1991,19,BA,F,13,9,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-19409,12,7,1991,19,BA,M,12,9,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-19543,1,8,1992,19,BA,F,13,9,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-19567,1,8,1992,19,BA,M,6,8,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-19584,1,8,1992,19,BA,F,13,7,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-19755,3,7,1992,19,BA,F,14,7,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-19775,3,7,1992,19,BA,F,14,9,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-16659,11,4,1989,19,SF,M,27,50,Sigmodon,fulviventer,Rodent,Long-term Krat Exclosure
-17495,5,23,1990,19,SF,M,27,68,Sigmodon,fulviventer,Rodent,Long-term Krat Exclosure
-18475,3,13,1991,19,SF,M,28,64,Sigmodon,fulviventer,Rodent,Long-term Krat Exclosure
-18834,7,12,1991,19,SF,M,26,100,Sigmodon,fulviventer,Rodent,Long-term Krat Exclosure
-18942,8,7,1991,19,SF,F,29,84,Sigmodon,fulviventer,Rodent,Long-term Krat Exclosure
-19252,11,13,1991,19,SF,M,27,60,Sigmodon,fulviventer,Rodent,Long-term Krat Exclosure
-35417,12,29,2002,19,SF,M,25,45,Sigmodon,fulviventer,Rodent,Long-term Krat Exclosure
-35420,12,29,2002,19,RO,M,15,10,Reithrodontomys,montanus,Rodent,Long-term Krat Exclosure
 24015,6,13,1996,19,PB,F,25,26,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
 24281,8,14,1996,19,PB,F,23,23,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
 24566,10,12,1996,19,PB,M,27,26,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
@@ -21870,7 +21719,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 35421,12,29,2002,19,PB,M,27,35,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
 35422,12,29,2002,19,PB,F,26,33,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
 35423,12,29,2002,19,PB,F,27,26,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
-26420,7,9,1997,19,PL,M,18,10,Peromyscus,leucopus,Rodent,Long-term Krat Exclosure
 2498,2,25,1980,24,NL,F,34,170,Neotoma,albigula,Rodent,Rodent Exclosure
 3058,6,22,1980,24,NL,F,34,187,Neotoma,albigula,Rodent,Rodent Exclosure
 3123,7,21,1980,24,NL,F,29,75,Neotoma,albigula,Rodent,Rodent Exclosure
@@ -22743,9 +22591,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 17003,1,29,1990,24,RF,F,19,11,Reithrodontomys,fulvescens,Rodent,Rodent Exclosure
 17252,3,29,1990,24,RF,F,17,12,Reithrodontomys,fulvescens,Rodent,Rodent Exclosure
 17378,4,24,1990,24,RF,F,19,11,Reithrodontomys,fulvescens,Rodent,Rodent Exclosure
-20242,8,29,1992,24,SO,F,25,79,Sigmodon,ochrognathus,Rodent,Rodent Exclosure
-20433,10,18,1992,24,SO,M,21,44,Sigmodon,ochrognathus,Rodent,Rodent Exclosure
-21557,5,18,1994,24,SO,M,28,86,Sigmodon,ochrognathus,Rodent,Rodent Exclosure
 28729,10,24,1998,24,PB,M,27,29,Chaetodipus,baileyi,Rodent,Rodent Exclosure
 30353,2,5,2000,24,PB,F,27,32,Chaetodipus,baileyi,Rodent,Rodent Exclosure
 30354,2,5,2000,24,PB,F,26,38,Chaetodipus,baileyi,Rodent,Rodent Exclosure
@@ -22753,14 +22598,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 31158,7,22,2000,24,PB,M,25,25,Chaetodipus,baileyi,Rodent,Rodent Exclosure
 35069,11,9,2002,24,PB,F,25,30,Chaetodipus,baileyi,Rodent,Rodent Exclosure
 35072,11,9,2002,24,PB,F,25,24,Chaetodipus,baileyi,Rodent,Rodent Exclosure
-23135,12,21,1995,24,PL,F,20,21,Peromyscus,leucopus,Rodent,Rodent Exclosure
-23147,12,21,1995,24,PL,M,20,21,Peromyscus,leucopus,Rodent,Rodent Exclosure
-23219,1,27,1996,24,PL,F,20,21,Peromyscus,leucopus,Rodent,Rodent Exclosure
-24582,10,12,1996,24,PL,F,19,23,Peromyscus,leucopus,Rodent,Rodent Exclosure
-24959,2,8,1997,24,PL,M,21,21,Peromyscus,leucopus,Rodent,Rodent Exclosure
-24987,2,8,1997,24,PL,F,21,27,Peromyscus,leucopus,Rodent,Rodent Exclosure
-26350,7,9,1997,24,PL,F,21,16,Peromyscus,leucopus,Rodent,Rodent Exclosure
-30499,3,4,2000,24,PL,M,20,21,Peromyscus,leucopus,Rodent,Rodent Exclosure
 2932,5,17,1980,1,NL,M,30,119,Neotoma,albigula,Rodent,Spectab exclosure
 3343,10,11,1980,1,NL,M,31,171,Neotoma,albigula,Rodent,Spectab exclosure
 3429,11,8,1980,1,NL,M,33,153,Neotoma,albigula,Rodent,Spectab exclosure
@@ -24464,11 +24301,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 26838,9,27,1997,1,PM,M,22,22,Peromyscus,maniculatus,Rodent,Spectab exclosure
 29301,3,14,1999,1,PM,M,20,23,Peromyscus,maniculatus,Rodent,Spectab exclosure
 29698,6,12,1999,1,PM,M,20,20,Peromyscus,maniculatus,Rodent,Spectab exclosure
-22443,7,20,1995,1,PH,M,26,42,Perognathus,hispidus,Rodent,Spectab exclosure
-22454,7,20,1995,1,PH,F,23,29,Perognathus,hispidus,Rodent,Spectab exclosure
-22678,9,23,1995,1,PH,F,25,35,Perognathus,hispidus,Rodent,Spectab exclosure
-17374,4,24,1990,1,BA,M,14,7,Baiomys,taylori,Rodent,Spectab exclosure
-33397,2,9,2002,1,RO,M,17,8,Reithrodontomys,montanus,Rodent,Spectab exclosure
 22711,9,23,1995,1,PB,F,24,30,Chaetodipus,baileyi,Rodent,Spectab exclosure
 22868,10,28,1995,1,PB,F,25,31,Chaetodipus,baileyi,Rodent,Spectab exclosure
 22870,10,28,1995,1,PB,F,26,39,Chaetodipus,baileyi,Rodent,Spectab exclosure
@@ -27982,7 +27814,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 26945,9,28,1997,9,PM,M,21,23,Peromyscus,maniculatus,Rodent,Spectab exclosure
 27067,10,26,1997,9,PM,M,21,18,Peromyscus,maniculatus,Rodent,Spectab exclosure
 27411,12,29,1997,9,PM,F,21,25,Peromyscus,maniculatus,Rodent,Spectab exclosure
-22285,4,30,1995,9,RX,M,20,20,Reithrodontomys,sp.,Rodent,Spectab exclosure
 30022,11,7,1999,9,PB,M,26,39,Chaetodipus,baileyi,Rodent,Spectab exclosure
 30257,1,10,2000,9,PB,M,26,24,Chaetodipus,baileyi,Rodent,Spectab exclosure
 30385,2,6,2000,9,PB,F,25,23,Chaetodipus,baileyi,Rodent,Spectab exclosure
@@ -28003,8 +27834,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 35343,12,8,2002,9,PB,F,25,24,Chaetodipus,baileyi,Rodent,Spectab exclosure
 35345,12,8,2002,9,PB,M,26,24,Chaetodipus,baileyi,Rodent,Spectab exclosure
 35524,12,31,2002,9,PB,F,25,27,Chaetodipus,baileyi,Rodent,Spectab exclosure
-25094,2,9,1997,9,PL,F,21,22,Peromyscus,leucopus,Rodent,Spectab exclosure
-27957,5,29,1998,9,PL,M,21,16,Peromyscus,leucopus,Rodent,Spectab exclosure
 4831,9,29,1981,21,NL,F,32,165,Neotoma,albigula,Rodent,Long-term Krat Exclosure
 4902,10,24,1981,21,NL,F,34,165,Neotoma,albigula,Rodent,Long-term Krat Exclosure
 8470,10,15,1983,21,NL,F,31,131,Neotoma,albigula,Rodent,Long-term Krat Exclosure
@@ -28634,25 +28463,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 27428,1,31,1998,21,PM,M,20,23,Peromyscus,maniculatus,Rodent,Long-term Krat Exclosure
 15777,3,13,1989,21,RF,F,18,16,Reithrodontomys,fulvescens,Rodent,Long-term Krat Exclosure
 16535,10,7,1989,21,RF,F,18,18,Reithrodontomys,fulvescens,Rodent,Long-term Krat Exclosure
-9631,10,20,1984,21,PH,F,25,25,Perognathus,hispidus,Rodent,Long-term Krat Exclosure
-9653,10,20,1984,21,PH,F,25,23,Perognathus,hispidus,Rodent,Long-term Krat Exclosure
-9729,12,30,1984,21,PH,F,25,32,Perognathus,hispidus,Rodent,Long-term Krat Exclosure
-10757,9,21,1985,21,PH,M,26,30,Perognathus,hispidus,Rodent,Long-term Krat Exclosure
-11005,11,16,1985,21,PH,M,25,34,Perognathus,hispidus,Rodent,Long-term Krat Exclosure
-11141,12,7,1985,21,PH,M,26,34,Perognathus,hispidus,Rodent,Long-term Krat Exclosure
-11280,3,8,1986,21,PH,M,27,39,Perognathus,hispidus,Rodent,Long-term Krat Exclosure
-19899,4,4,1992,21,PH,F,27,31,Perognathus,hispidus,Rodent,Long-term Krat Exclosure
-19969,5,2,1992,21,PH,F,26,48,Perognathus,hispidus,Rodent,Long-term Krat Exclosure
-16598,11,4,1989,21,BA,M,13,7,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-16599,11,4,1989,21,BA,M,12,6,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-19260,11,14,1991,21,BA,M,14,7,Baiomys,taylori,Rodent,Long-term Krat Exclosure
-16744,12,4,1989,21,SF,M,38,49,Sigmodon,fulviventer,Rodent,Long-term Krat Exclosure
-16889,1,6,1990,21,SF,M,29,55,Sigmodon,fulviventer,Rodent,Long-term Krat Exclosure
-16897,1,6,1990,21,SF,F,29,46,Sigmodon,fulviventer,Rodent,Long-term Krat Exclosure
-16998,1,29,1990,21,SF,F,26,50,Sigmodon,fulviventer,Rodent,Long-term Krat Exclosure
-17017,1,29,1990,21,SF,F,27,46,Sigmodon,fulviventer,Rodent,Long-term Krat Exclosure
-17514,5,24,1990,21,SF,F,26,51,Sigmodon,fulviventer,Rodent,Long-term Krat Exclosure
-17586,6,21,1990,21,SF,F,24,53,Sigmodon,fulviventer,Rodent,Long-term Krat Exclosure
 25697,5,10,1997,21,PB,M,26,26,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
 26169,6,11,1997,21,PB,M,26,21,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
 26176,6,11,1997,21,PB,M,26,30,Chaetodipus,baileyi,Rodent,Long-term Krat Exclosure
@@ -29259,15 +29069,7 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 16011,5,10,1989,10,RF,M,19,13,Reithrodontomys,fulvescens,Rodent,Rodent Exclosure
 17191,2,25,1990,10,RF,F,18,14,Reithrodontomys,fulvescens,Rodent,Rodent Exclosure
 17304,3,30,1990,10,RF,F,18,14,Reithrodontomys,fulvescens,Rodent,Rodent Exclosure
-18871,7,13,1991,10,RO,F,14,11,Reithrodontomys,montanus,Rodent,Rodent Exclosure
-33565,2,10,2002,10,RO,F,16,8,Reithrodontomys,montanus,Rodent,Rodent Exclosure
 31088,7,2,2000,10,PB,M,24,27,Chaetodipus,baileyi,Rodent,Rodent Exclosure
-23340,1,28,1996,10,PL,F,19,20,Peromyscus,leucopus,Rodent,Rodent Exclosure
-25059,2,9,1997,10,PL,M,20,21,Peromyscus,leucopus,Rodent,Rodent Exclosure
-26931,9,28,1997,10,PL,F,10,19,Peromyscus,leucopus,Rodent,Rodent Exclosure
-26934,9,28,1997,10,PL,M,21,22,Peromyscus,leucopus,Rodent,Rodent Exclosure
-27538,2,1,1998,10,PL,F,20,20,Peromyscus,leucopus,Rodent,Rodent Exclosure
-27975,5,29,1998,10,PL,M,20,13,Peromyscus,leucopus,Rodent,Rodent Exclosure
 8285,9,10,1983,16,NL,F,32,152,Neotoma,albigula,Rodent,Rodent Exclosure
 204,9,12,1977,16,DM,F,37,41,Dipodomys,merriami,Rodent,Rodent Exclosure
 306,10,17,1977,16,DM,M,33,23,Dipodomys,merriami,Rodent,Rodent Exclosure
@@ -29718,8 +29520,6 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 35182,11,10,2002,16,PB,F,25,31,Chaetodipus,baileyi,Rodent,Rodent Exclosure
 35184,11,10,2002,16,PB,F,26,29,Chaetodipus,baileyi,Rodent,Rodent Exclosure
 35481,12,29,2002,16,PB,M,28,31,Chaetodipus,baileyi,Rodent,Rodent Exclosure
-26424,7,9,1997,16,PL,F,22,18,Peromyscus,leucopus,Rodent,Rodent Exclosure
-26889,9,28,1997,16,PL,F,21,10,Peromyscus,leucopus,Rodent,Rodent Exclosure
 9398,7,31,1984,23,NL,M,31,123,Neotoma,albigula,Rodent,Rodent Exclosure
 14874,9,11,1988,23,NL,M,34,112,Neotoma,albigula,Rodent,Rodent Exclosure
 85,8,20,1977,23,DM,F,35,41,Dipodomys,merriami,Rodent,Rodent Exclosure
@@ -30059,17 +29859,9 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 14361,4,17,1988,23,RF,F,17,13,Reithrodontomys,fulvescens,Rodent,Rodent Exclosure
 14864,9,11,1988,23,RF,F,17,18,Reithrodontomys,fulvescens,Rodent,Rodent Exclosure
 17409,4,24,1990,23,RF,M,18,12,Reithrodontomys,fulvescens,Rodent,Rodent Exclosure
-18927,8,7,1991,23,SF,F,30,199,Sigmodon,fulviventer,Rodent,Rodent Exclosure
-34517,7,13,2002,23,RO,M,17,11,Reithrodontomys,montanus,Rodent,Rodent Exclosure
-35487,12,29,2002,23,RO,F,14,13,Reithrodontomys,montanus,Rodent,Rodent Exclosure
 32662,9,22,2001,23,PB,M,26,34,Chaetodipus,baileyi,Rodent,Rodent Exclosure
 35073,11,9,2002,23,PB,M,26,34,Chaetodipus,baileyi,Rodent,Rodent Exclosure
 35489,12,29,2002,23,PB,F,25,24,Chaetodipus,baileyi,Rodent,Rodent Exclosure
-23254,1,27,1996,23,PL,F,20,24,Peromyscus,leucopus,Rodent,Rodent Exclosure
-23572,3,23,1996,23,PL,M,20,19,Peromyscus,leucopus,Rodent,Rodent Exclosure
-23699,4,14,1996,23,PL,M,21,20,Peromyscus,leucopus,Rodent,Rodent Exclosure
-27898,5,28,1998,23,PL,M,20,20,Peromyscus,leucopus,Rodent,Rodent Exclosure
-24991,2,8,1997,23,PX,F,19,20,Chaetodipus,sp.,Rodent,Rodent Exclosure
 13451,9,27,1987,7,NL,M,32,154,Neotoma,albigula,Rodent,Rodent Exclosure
 13461,9,27,1987,7,NL,F,33,170,Neotoma,albigula,Rodent,Rodent Exclosure
 14404,4,18,1988,7,NL,M,34,235,Neotoma,albigula,Rodent,Rodent Exclosure
@@ -30670,8 +30462,3 @@ record_id,month,day,year,plot_id,species_id,sex,hindfoot_length,weight,genus,spe
 33305,12,15,2001,7,PB,M,29,44,Chaetodipus,baileyi,Rodent,Rodent Exclosure
 34524,7,13,2002,7,PB,M,25,16,Chaetodipus,baileyi,Rodent,Rodent Exclosure
 35382,12,8,2002,7,PB,M,26,30,Chaetodipus,baileyi,Rodent,Rodent Exclosure
-26557,7,29,1997,7,PL,F,20,22,Peromyscus,leucopus,Rodent,Rodent Exclosure
-26787,9,27,1997,7,PL,F,21,16,Peromyscus,leucopus,Rodent,Rodent Exclosure
-26966,10,25,1997,7,PL,M,20,16,Peromyscus,leucopus,Rodent,Rodent Exclosure
-27185,11,22,1997,7,PL,F,21,22,Peromyscus,leucopus,Rodent,Rodent Exclosure
-27792,5,2,1998,7,PL,F,20,8,Peromyscus,leucopus,Rodent,Rodent Exclosure
