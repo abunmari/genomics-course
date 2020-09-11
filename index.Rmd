@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 * Lab 1 : [Intro to R](labs/lab1_marisaabundis.html)
 * Lab 2 : [Git, Github, and Rstudio Projects](labs/lab2_MarisaAbundis.html)
 * Lab 3A : [Starting with the Data](lab3A.html)
-* Lab 3B : 
+* Lab 3B : [Manipulating Data](lab3B.html)
 
 *Application written in R [@RCoreTeam] using the Shiny framework [@Chang2015].*
 
