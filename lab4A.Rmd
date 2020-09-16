@@ -1,0 +1,146 @@
+---
+title: "Lab 4A"
+author: "Marisa Abundis"
+date: "September 14, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+```{r}
+surveys_complete <- read_csv("data/surveys_complete.csv")
+```
+
+### Plotting with ggplot2
+```{r}
+# bind the plot to a specific data frame
+
+ggplot(data = surveys_complete)
+```
+```{r}
+# Aesthetic mapping
+
+ggplot(data = surveys_complete, mapping = aes(x = weight, y = hindfoot_length))
+```
+```{r}
+# Add a geom - graphical representations
+
+ggplot(data = surveys_complete, aes(x = weight, y = hindfoot_length)) +
+  geom_point()
+
+```
+```{r}
+# Assign plot to a variable
+
+surveys_plot <- ggplot(data = surveys_complete, mapping = aes(x = weight, y = hindfoot_length))
+
+#Draw the plot
+
+surveys_plot + geom_point()
+
+```
+```{r}
+# This will not add the new layer and will return an error message
+
+# surveys_plot
+#  + geom_point()
+```
+
+### Challenge 1
+```{r}
+library(hexbin)
+```
+```{r}
+# Hexagonal bin plot - better representation of data with a large num of observations
+
+surveys_plot +
+  geom_hex()
+```
+
+### Building your plots iteratively
+```{r}
+ggplot(data = surveys_complete, aes(x = weight, y = hindfoot_length)) + 
+  geom_point()
+```
+```{r}
+# transparent(alpha) to avoid overplotting
+
+ggplot(data = surveys_complete, aes(x = weight, y = hindfoot_length)) +
+  geom_point(alpha = 0.1)
+```
+```{r}
+# add colors for all the points
+
+ggplot(data = surveys_complete, mapping = aes(x = weight, y = hindfoot_length)) +
+  geom_point(alpha = 0.1, color = "blue")
+```
+```{r}
+# color each speices in a plot differently / aes(color = species_id)
+
+ggplot(data = surveys_complete, mapping = aes(x = weight, y = hindfoot_length)) +
+  geom_point(alpha = 0.1, aes(color = species_id))
+```
+
+### Challenge 2
+```{r}
+ggplot(data = surveys_complete, mapping = aes(x = species_id, y = weight)) +
+  geom_point(aes(color = plot_type))
+
+# This is not a good way to visualize this data
+```
+
+### Boxplot
+```{r}
+# visualize the distribution of weight within each species
+
+ggplot(data = surveys_complete, mapping = aes(x = species_id, y = weight)) +
+geom_boxplot()
+```
+```{r}
+# Add points to the boxplot - better idea of num of measurements and distribution
+# use geom_jitter()
+
+ggplot(data = surveys_complete, mapping = aes(x = species_id, y = weight)) + 
+  geom_boxplot(alpha = 0) +  #makes bg transparent
+  geom_jitter(alpha = 0.3, color = "tomato")
+```
+### Challenge 3
+```{r}
+# replace boxplot with violin plot - shape (of the density of point) is drawn
+# use geom_violin()
+
+ggplot(data = surveys_complete, mapping = aes(x = species_id, y = weight)) + 
+  geom_violin()
+
+```
+```{r}
+# Represent weight on the log10 scale - better distribute the obvs
+# use scale_y_log10()
+
+ggplot(data = surveys_complete, mapping = aes(x = species_id, y = weight)) + 
+  geom_violin() +
+  scale_y_log10()
+
+```
+```{r}
+# Distribution of hindfoot_length within each species
+
+ggplot(data = surveys_complete, mapping = aes(x = species_id, y = hindfoot_length)) +
+  geom_boxplot(alpha = 0) +
+  geom_jitter(alpha = 0.3, aes(color = plot_id))
+
+```
+
+```{r}
+# change plot_id to a factor
+
+plot_id <- factor()
+
+ggplot(data = surveys_complete, mapping = aes(x = species_id, y = hindfoot_length)) +
+  geom_boxplot(alpha = 0) +
+  geom_jitter(alpha = 0.3, aes(color = plot_id))
+
+```
+
