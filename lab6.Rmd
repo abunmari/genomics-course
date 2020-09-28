@@ -305,12 +305,9 @@ daily_report_926 <- read_csv(url("https://raw.githubusercontent.com/CSSEGISandDa
   us <- map_data("state")
 ca_us <- subset(us, region == "california")
 counties <- map_data("county")
-ca_county <- subset(counties, region == "California")
+ca_county <- subset(counties, region == "california")
 state_join <- left_join(ca_county, daily_report_926, by = c("subregion" = "Admin2")) 
 
-```
-
-```{r}
 
 library(plotly)
 ggplotly(
@@ -319,7 +316,7 @@ ggplotly(
 # Add data layer
   geom_polygon(data = state_join, aes(fill = Confirmed), color = "black") +
     scale_fill_gradientn(colours = 
-                         wes_palette("Chevalier1", 100, type = "continuous")) +
+                         wes_palette("Zissou1", 100, type = "continuous")) +
   ggtitle("COVID-19 Cases in CA") +
 # Cleaning up the graph
   labs(x=NULL, y=NULL) +
