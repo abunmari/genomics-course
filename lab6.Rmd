@@ -231,21 +231,20 @@ daily_report_926 <- read_csv(url("https://raw.githubusercontent.com/CSSEGISandDa
                   "District of Columbia", "Diamond Princess")) %>% 
     filter(Lat > 0)
 
-mybreaks <- c(1, 100, 1000, 10000, 100000, 1000000)
+mybreaks <- c(1, 100, 1000, 10000, 100000)
 ggplot(daily_report_926, aes(x = Long, y = Lat, size = Confirmed)) +
     borders("state", colour = "white", fill = "grey90") +
     geom_point(aes(x=Long, y=Lat, size=Confirmed, color=Confirmed),stroke=F, alpha=0.7) +
-    scale_size_continuous(name="Cases", trans="log", range=c(1,7), 
+    scale_size_continuous(name="Cases", range=c(1,10), 
                         breaks=mybreaks, labels = c("1-99",
-                        "100-999", "1,000-9,999", "10,000-99,999",  "100,000-999,999","1,000,000+")) +
-    scale_color_viridis_c(option="viridis",name="Cases",
+                        "100-999", "1,000-9,999", "10,000-99,999",  "100,000+")) +
+    scale_color_viridis_c(option="magma",name="Cases",
                         trans="log", breaks=mybreaks, 
                         labels = c("1-99",
                         "100-999",
                         "1,000-9,999", 
                         "10,000-99,999",
-                        "100,000-999,999",
-                        "1,000,000+"))  +
+                        "100,000+"))  +
   
 # Cleaning up the graph
   theme_void() + 
@@ -316,7 +315,8 @@ ggplotly(
 # Add data layer
   geom_polygon(data = state_join, aes(fill = Confirmed), color = "black") +
     scale_fill_gradientn(colours = 
-                         wes_palette("Rushmore1", 5, type = "continuous")) +
+                         wes_palette("Rushmore1", 5, type = "continuous"),
+                          trans = "log10") +
   ggtitle("COVID-19 Cases in CA") +
 # Cleaning up the graph
   labs(x=NULL, y=NULL) +
