@@ -315,8 +315,8 @@ ggplotly(
 # Add data layer
   geom_polygon(data = state_join, aes(fill = Confirmed), color = "black") +
     scale_fill_gradientn(colours = 
-                         wes_palette("Rushmore1", 5, type = "continuous"),
-                         breaks = c(10, 100, 1000, 10000, 100000),
+                         wes_palette("Rushmore1", 100, type = "continuous"),
+                         breaks = c(1, 10, 100, 1000, 10000, 100000),
                           trans = "log10") +
   ggtitle("COVID-19 Cases in CA") +
 # Cleaning up the graph
