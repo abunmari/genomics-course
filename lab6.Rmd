@@ -20,7 +20,7 @@ library(viridis)
 library(wesanderson)
 ```
 
-# Creating Country, State, and County Maps
+# **Country, State, and County Map Examples**
 ```{r}
 daily_report <- read_csv(url("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/04-02-2020.csv")) %>% 
   rename(Long = "Long_") 
@@ -202,7 +202,7 @@ ggplotly(
 
 ```
 
-# Exercises
+# **Exercises**
 
 ### Exercise 1 
 ```{r}
