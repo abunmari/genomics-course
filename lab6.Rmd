@@ -8,10 +8,10 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE)
 ```
 
-```{r, warning=FALSE, message=FALSE}
+```{r, include=FALSE}
 library(tidyverse)
 library(maps)
 library(mapdata)
@@ -20,6 +20,7 @@ library(viridis)
 library(wesanderson)
 ```
 
+# Creating Country, State, and County Maps
 ```{r}
 daily_report <- read_csv(url("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/04-02-2020.csv")) %>% 
   rename(Long = "Long_") 
@@ -33,6 +34,7 @@ ggplot(daily_report, aes(x = Long, y = Lat, size = Confirmed/1000)) +
     theme(legend.position = "right") +
     coord_fixed(ratio=1.5)
 ```
+
 ```{r}
 # Zoom in on 48 states (filter US territories + entries with no value)
 
@@ -54,6 +56,7 @@ ggplot(daily_report, aes(x = Long, y = Lat, size = Confirmed/1000)) +
     theme(legend.position = "right") +
     coord_fixed(ratio=1.5)
 ```
+
 ```{r}
 mybreaks <- c(1, 100, 1000, 10000, 10000)
 ggplot(daily_report, aes(x = Long, y = Lat, size = Confirmed)) +
@@ -171,7 +174,7 @@ ggplot(data = ma_county, mapping = aes(x = long, y = lat, group = group)) +
   labs(title = "COVID-19 Confirmed Cases in Massachusetts'")
 ```
 
-```{r}
+```{r,include=FALSE}
 # Nantucket & Dukes not includes on graph + unassigned group
 
 daily_report
@@ -188,7 +191,7 @@ ggplotly(
   geom_polygon(data = state_join, aes(fill = Confirmed), color = "black") +
     scale_fill_gradientn(colours = 
                          wes_palette("Zissou1", 100, type = "continuous")) +
-  ggtitle("COVID-19 Cases in MA") +
+  ggtitle("Interactive: COVID-19 Cases in MA") +
 # Cleaning up the graph
   labs(x=NULL, y=NULL) +
   theme(panel.border = element_blank()) +
@@ -318,7 +321,7 @@ ggplotly(
                          wes_palette("Rushmore1", 100, type = "continuous"),
                          breaks = c(1, 10, 100, 1000, 10000, 100000),
                           trans = "log10") +
-  ggtitle("COVID-19 Cases in CA") +
+  ggtitle("Interactive: COVID-19 Cases in CA") +
 # Cleaning up the graph
   labs(x=NULL, y=NULL) +
   theme(panel.border = element_blank()) +
