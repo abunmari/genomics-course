@@ -244,13 +244,20 @@ ggplot(data = world, mapping = aes(x = long, y = lat, text = region, group = gro
 # **Exercises**
 
 ### Exercise 1 
+
 ```{r}
-# For the above graph “World COVID-19 Confirmed case” summarize the counts for each Country on the graph and update the graph to 9/26/2020. You may need to adjust the size of the points.
-
 daily_report_926 <- read_csv(url("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/09-26-2020.csv")) %>% 
-  rename(Long = "Long_") 
+  rename(Long = "Long_")
 
-ggplot(daily_report_926, aes(x = Long, y = Lat, size = Confirmed/10000)) +
+world_926 <- daily_report_926 %>% 
+  group_by(Country_Region) %>% 
+    filter(Lat != "NA") %>% 
+  filter(Long !="NA") %>% 
+  summarize(Confirmed = sum(Confirmed), Deaths = sum(Deaths), Lat = mean(Lat), Long = mean(Long) ) 
+
+
+
+plot926 <- ggplot(world_926, aes(x = Long, y = Lat, text=Country_Region, size = Confirmed/10000)) +
     borders("world", colour = NA, fill = "grey90") +
     theme_bw() +
     geom_point(shape = 21, color='purple', fill='purple', alpha = 0.3) +
@@ -258,6 +265,11 @@ ggplot(daily_report_926, aes(x = Long, y = Lat, size = Confirmed/10000)) +
         size="Cases (x10 000))") +
     theme(legend.position = "right") +
     coord_fixed(ratio=1.5)
+
+ggplotly(plot926)
+  
+  
+
 ```
 
 ### Exercise 2
