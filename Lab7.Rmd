@@ -1,5 +1,5 @@
 ---
-title: "lab 7"
+title: "Lab 7"
 author: "Marisa Abundis"
 date: "10/12/2020"
 output: html_document
@@ -14,27 +14,35 @@ library("rmarkdown")
 
 # **2.3 Reading in data with tximeta**
 
-## load airway library
+* ### load airway library
 ```{r}
 library("airway")
 ```
-## dir - store to directory 
+
+* ### dir - store to directory 
+
 ```{r}
 dir <- system.file("extdata", package="airway", mustWork=TRUE)
 ```
-## list.files - files in directory 
+
+* ### list.files - files in directory 
+
 ```{r}
 list.files(dir)
 list.files(file.path(dir, "quants"))
 
 ```
-## sampleinfo - load CSV file
+
+* ### sampleinfo - load CSV file
+
 ```{r}
 csvfile <- file.path(dir, "sample_table.csv")
 coldata <- read.csv(csvfile, row.names=1, stringsAsFactors=FALSE)
 coldata
 ```
-## makecoldata - create columns
+
+* ### makecoldata - create columns
+
 ```{r}
 coldata <- coldata[1:2,]
 coldata$names <- coldata$Run
@@ -42,30 +50,39 @@ coldata$files <- file.path(dir, "quants", coldata$names, "quant.sf.gz")
 file.exists(coldata$files)
 ```
 
-## Load tximeta package
+* ### Load tximeta package
+
 ```{r}
 library("tximeta")
 se <- tximeta(coldata)
 ```
 
-## look se
+* ### look se
+
 ```{r}
 dim(se)
 head(rownames(se))
 ```
-## summarize transcript-level quantifications to the gene level
+
+* ### summarize transcript-level quantifications to the gene level
+
 ```{r}
 gse <- summarizeToGene(se)
 
 ```
-## lookgse - check dimensions are reduced
+
+* ### lookgse - check dimensions are reduced
+
 ```{r}
 dim(gse)
 head(rownames(gse))
 
 ```
+
 # **2.5 Summarized Experiment**
-## Summarized experiment object
+
+* ### Summarized experiment object
+
 ```{r}
 par(mar=c(0,0,0,0))
 plot(1,1,xlim=c(0,100),ylim=c(0,100),bty="n",
@@ -83,77 +100,106 @@ text(67.5,85,"colData")
 
 ```
 
-## loadfullgse - load full count matrix of all samples + data
+
+* ### loadfullgse - load full count matrix of all samples + data
+
 ```{r}
 data(gse)
 gse
 ```
-## assaysgse - examine counts (first matrix) with assay
+
+* ### assaysgse - examine counts (first matrix) with assay
+
 ```{r}
 assayNames(gse)
 head(assay(gse), 3)
 colSums(assay(gse))
 
 ```
-## rowrangesgse - shows ranges for the first and last 5 genes
+
+* ### rowrangesgse - shows ranges for the first and last 5 genes
+
 ```{r}
 rowRanges(gse)
 ```
-## lookseqinfo - metadata about the sequences
+
+* ### lookseqinfo - metadata about the sequences
+
 ```{r}
 seqinfo(rowRanges(gse))
 
 ```
 
-## coldatagse - column data for Summarized Experiment
+* ### coldatagse - column data for Summarized Experiment
+
 ```{r}
 colData(gse)
 ```
+
+
 # **3. The DESeqDataSet object, sample information and the design formula**
-## gsevars - examine columns of colData of gse
+
+* ### gsevars - examine columns of colData of gse
+
 ```{r}
 gse$donor
 gse$condition
 
 ```
-## gsevarsrename - rename variables
+
+* ### gsevarsrename - rename variables
+
 ```{r}
 gse$cell <- gse$donor
 gse$dex <- gse$condition
 ```
 
-## gsevarsrename - rename levels, order preserved
+* ### gsevarsrename - rename levels, order preserved
+
 ```{r}
 levels(gse$dex)
 # when renaming levels, the order must be preserved!
 levels(gse$dex) <- c("untrt", "trt")
 ```
-## gsedex - load magrittr package
+
+* ### gsedex - load magrittr package
+
 ```{r}
 library("magrittr")
 gse$dex %<>% relevel("untrt")
 gse$dex
 ```
-## explaincmpass - magrittr package using pipe
+
+* ### explaincmpass - magrittr package using pipe
+
 ```{r, eval=FALSE}
 gse$dex <- relevel(gse$dex, "untrt")
 ```
 
+
 # **3.1 Starting from Summarized Experiment**
 
-## countreads
+
+* ### countreads
+
 ```{r}
 #2nd argument of rounds tells us how many decimals to keep
 round( colSums(assay(gse)) / 1e6, 1 )
 ```
-## load DESeq2 library
+
+* ### load DESeq2 library
+
 ```{r}
 library("DESeq2")
 ```
-## makedds - construst a DESeqDataSat object, starting point of analysis
+
+* ### makedds - construst a DESeqDataSat object, starting point of analysis
+
 ```{r}
 dds <- DESeqDataSet(gse, design = ~ cell + dex)
 ```
+
+
 # **3.2 Starting from count matrices**
 
 ```{r}
@@ -165,11 +211,13 @@ head(countdata, 3)
 coldata <- colData(gse)
 
 ```
+
 ```{r}
 ddsMat <- DESeqDataSetFromMatrix(countData = countdata,
                                  colData = coldata,
                                  design = ~ cell + dex)
 ```
+
 
 # **4.1 Pre-filtering the dataset**
 
@@ -184,36 +232,45 @@ nrow(dds)
 keep <- rowSums(counts(dds) >= 10) >= 3
 ```
 
+
 # **4.2 The variance stabilizing transformation and the rlog**
 
-## meanSdLogCts - plot standard deviation of each row (gene) against the mean
+* ### meanSdLogCts - plot standard deviation of each row (gene) against the mean
+
 ```{r}
 lambda <- 10^seq(from = -1, to = 2, length = 1000)
 cts <- matrix(rpois(1000*100, lambda), ncol = 100)
 library("vsn")
 meanSdPlot(cts, ranks = FALSE)
 ```
-## meanSdLogCts - plot log transformed counts
+
+* ### meanSdLogCts - plot log transformed counts
+
 ```{r}
 log.cts.one <- log2(cts + 1)
 meanSdPlot(log.cts.one, ranks = FALSE)
 
 ```
 
-## vst - transformed values stored in assay 
+* ### vst - transformed values stored in assay 
+
 ```{r}
 vsd <- vst(dds, blind = FALSE)
 head(assay(vsd), 3)
 colData(vsd)
 
 ```
-## rlog - transformed log values stored in assay
+
+* ### rlog - transformed log values stored in assay
+
 ```{r}
 rld <- rlog(dds, blind = FALSE)
 head(assay(rld), 3)
 
 ```
-## transformplot - scatterplot of transformed counts from 2 samples
+
+* ### transformplot - scatterplot of transformed counts from 2 samples
+
 ```{r, fig.width= 6, fig.height = 2.5}
 library("dplyr")
 library("ggplot2")
@@ -234,18 +291,23 @@ df$transformation <- factor(df$transformation, levels=lvls)
 ggplot(df, aes(x = x, y = y)) + geom_hex(bins = 80) +
   coord_fixed() + facet_grid( . ~ transformation)  
 ```
+
+
 # **4.3 Sample distances**
+
 
 ```{r}
 sampleDists <- dist(t(assay(vsd)))
 sampleDists
 ```
+
 ```{r}
 library("pheatmap")
 library("RColorBrewer")
 ```
 
-## distheatmap - Heatmap of sample-to-sample distances
+* ### distheatmap - Heatmap of sample-to-sample distances
+
 ```{r, fig.width=6.1, fig.height=4.5}
 sampleDistMatrix <- as.matrix( sampleDists )
 rownames(sampleDistMatrix) <- paste( vsd$dex, vsd$cell, sep = " - " )
@@ -258,12 +320,14 @@ pheatmap(sampleDistMatrix,
 
 ```
 
+
 ```{r}
 library("PoiClaClu")
 poisd <- PoissonDistance(t(counts(dds)))
 ```
 
-## poisdistheatmap - Poisson Distance heatmap
+* ### poisdistheatmap - Poisson Distance heatmap
+
 ```{r, fig.width=6.1, fig.height=4.5}
 samplePoisDistMatrix <- as.matrix( poisd$dd )
 rownames(samplePoisDistMatrix) <- paste( dds$dex, dds$cell, sep=" - " )
@@ -274,11 +338,16 @@ pheatmap(samplePoisDistMatrix,
          col = colors)
 ```
 
+
 # **4.4 PCA plot**
-## plotpca - PCA plot using VST data
+
+
+* ### plotpca - PCA plot using VST data
+
 ```{r, fig.width=6, fig.height=4.5}
 plotPCA(vsd, intgroup = c("dex", "cell"))
 ```
+
 
 ```{r}
 pcaData <- plotPCA(vsd, intgroup = c( "dex", "cell"), returnData = TRUE)
@@ -286,7 +355,9 @@ pcaData
 percentVar <- round(100 * attr(pcaData, "percentVar"))
 
 ```
-## ggplotpca - PCA plot using VST values & custom ggplot2 code
+
+* ### ggplotpca - PCA plot using VST values & custom ggplot2 code
+
 ```{r, fig.width=6, fig.height=4.5}
 ggplot(pcaData, aes(x = PC1, y = PC2, color = dex, shape = cell)) +
   geom_point(size =3) +
@@ -296,7 +367,10 @@ ggplot(pcaData, aes(x = PC1, y = PC2, color = dex, shape = cell)) +
   ggtitle("PCA with VST data")
 ```
 
+
 # **4.5 PCA plot using Generalized PCA**
+
+
 ```{r}
 library("glmpca")
 gpca <- glmpca(counts(dds), L=2)
@@ -305,7 +379,8 @@ gpca.dat$dex <- dds$dex
 gpca.dat$cell <- dds$cell
 ```
 
-## glmpca - plot Generalized PCA
+* ### glmpca - plot Generalized PCA
+
 ```{r, fig.width=6, fig.height=4.5}
 ggplot(gpca.dat, aes(x = dim1, y = dim2, color = dex, shape = cell)) +
   geom_point(size =3) + coord_fixed() + ggtitle("glmpca - Generalized PCA")
@@ -313,9 +388,12 @@ ggplot(gpca.dat, aes(x = dim1, y = dim2, color = dex, shape = cell)) +
 
 ```
 
+
 # **4.6 MDS plot**
 
-## mdsvst - MDS plot using VST Data
+
+* ### mdsvst - MDS plot using VST Data
+
 ```{r, fig.width=6, fig.height=4.5}
 mds <- as.data.frame(colData(vsd))  %>%
          cbind(cmdscale(sampleDistMatrix))
@@ -324,7 +402,8 @@ ggplot(mds, aes(x = `1`, y = `2`, color = dex, shape = cell)) +
 
 ```
 
-## mdspois - MDS plot using Poisson Distance
+* ### mdspois - MDS plot using Poisson Distance
+
 ```{r, fig.width=6, fig.height=4.5}
 mdsPois <- as.data.frame(colData(dds)) %>%
    cbind(cmdscale(samplePoisDistMatrix))
@@ -332,12 +411,19 @@ ggplot(mdsPois, aes(x = `1`, y = `2`, color = dex, shape = cell)) +
   geom_point(size = 3) + coord_fixed() + ggtitle("MDS with PoissonDistances")
 ```
 
+
 # **5.1 Running the differential expression pipeline**
-## airwayDE - differential expression pipeline on raw counts using DESq function call
+
+* ### airwayDE - differential expression pipeline on raw counts using DESq function call
+
 ```{r}
 dds <- DESeq(dds)
 ```
+
+
 # **5.2 Building the results table**
+
+
 ```{r}
 res <- results(dds)
 res
@@ -366,14 +452,22 @@ resLFC1 <- results(dds, lfcThreshold=1)
 table(resLFC1$padj < 0.1)
 
 ```
+
+
 # **5.3 Other comparisons**
+
+
 ```{r}
 results(dds, contrast = c("cell", "N061011", "N61311"))
 
 ```
+
+
 # **5.4 Multiple testing**
 
-## sumres - summarized results, adjusting p value 
+
+* ### sumres - summarized results, adjusting p value 
+
 ```{r}
 sum(res$pvalue < 0.05, na.rm=TRUE)
 sum(!is.na(res$pvalue))
@@ -389,14 +483,20 @@ head(resSig[ order(resSig$log2FoldChange), ])
 ```{r}
 head(resSig[ order(resSig$log2FoldChange, decreasing = TRUE), ])
 ```
+
+
 # **6.1 Count plots**
 
-## plotcounts - Normalized coutns for a single gene over treatment group
+
+* ### plotcounts - Normalized coutns for a single gene over treatment group
+
 ```{r}
 topGene <- rownames(res)[which.min(res$padj)]
 plotCounts(dds, gene = topGene, intgroup=c("dex"))
 ```
-## ggplotcountsjitter - Custom plots using ggplot2
+
+* ### ggplotcountsjitter - Custom plots using ggplot2
+
 ```{r, fig.width=4, fig.height=3}
 library("ggbeeswarm")
 geneCounts <- plotCounts(dds, gene = topGene, intgroup = c("dex","cell"),
@@ -405,28 +505,36 @@ ggplot(geneCounts, aes(x = dex, y = count, color = cell)) +
   scale_y_log10() +  geom_beeswarm(cex = 3)
 ```
 
-## ggplotcountsgroup - Normalized counts w/ lines connecting cell lines
+* ### ggplotcountsgroup - Normalized counts w/ lines connecting cell lines
+
 ```{r, fig.width=4, fig.height=3}
 ggplot(geneCounts, aes(x = dex, y = count, color = cell, group = cell)) +
   scale_y_log10() + geom_point(size = 3) + geom_line()
 ```
 
-#**6.2 MA-Plot**
 
-## plotma -  plot, log2 fold changes induced by treatment (lfcshrink function)
+# **6.2 MA-Plot**
+
+
+* ### plotma -  plot, log2 fold changes induced by treatment (lfcshrink function)
+
 ```{r}
 library("apeglm")
 resultsNames(dds)
 res <- lfcShrink(dds, coef="dex_trt_vs_untrt", type="apeglm")
 plotMA(res, ylim = c(-5, 5))
 ```
-## plotmaNoShr - plot, log2 fold changes (no shrink) 
+
+* ### plotmaNoShr - plot, log2 fold changes (no shrink)
+
 ```{r}
 res.noshr <- results(dds, name="dex_trt_vs_untrt")
 plotMA(res.noshr, ylim = c(-5, 5))
 
 ```
-## plotmalabel - label individual points on MA-plot
+
+* ### plotmalabel - label individual points on MA-plot
+
 ```{r}
 plotMA(res, ylim = c(-5,5))
 topGene <- rownames(res)[which.min(res$padj)]
@@ -436,20 +544,26 @@ with(res[topGene, ], {
 })
 ```
 
-## histpvalue2 - Histogram of the p Values
+* ### histpvalue2 - Histogram of the p Values
+
 ```{r}
 hist(res$pvalue[res$baseMean > 1], breaks = 0:20/20,
      col = "grey50", border = "white")
 
 ```
 
+
 # **6.3 Gene clustering**
+
+
 ```{r}
 library("genefilter")
 topVarGenes <- head(order(rowVars(assay(vsd)), decreasing = TRUE), 20)
 
 ```
-## genescluster - Heatmap of relatives VST-transformed values across samples
+
+* ### genescluster - Heatmap of relatives VST-transformed values across samples
+
 ```{r}
 mat  <- assay(vsd)[ topVarGenes, ]
 mat  <- mat - rowMeans(mat)
@@ -457,9 +571,13 @@ anno <- as.data.frame(colData(vsd)[, c("cell","dex")])
 pheatmap(mat, annotation_col = anno)
 
 ```
+
+
 # **6.4 Independent filtering**
 
-## sensitivityovermean - Ratio of small p values for genes binned by mean normalized count
+
+* ### sensitivityovermean - Ratio of small p values for genes binned by mean normalized count
+
 ```{r, fig.width=6}
 qs <- c(0, quantile(resLFC1$baseMean[resLFC1$baseMean > 0], 0:6/6))
 bins <- cut(resLFC1$baseMean, qs)
@@ -470,7 +588,10 @@ barplot(fractionSig, xlab = "mean normalized count",
                      ylab = "fraction of small p values")
 
 ```
+
+
 # **6.5 Independent Hypothesis Weighting**
+
 
 ```{r, eval =FALSE}
 #  library("IHW")
@@ -478,7 +599,9 @@ barplot(fractionSig, xlab = "mean normalized count",
 
 ```
 
+
 # **7. Annotating and Exporting Results**
+
 
 ```{r}
 library("AnnotationDbi")
@@ -507,7 +630,10 @@ resOrdered <- res[order(res$pvalue),]
 head(resOrdered)
 ```
 
+
 # **7.1 Exporting Results**
+
+
 ```{r, eval=FALSE}
 # Save results in CSV file, top 100 genes example
 
@@ -526,7 +652,10 @@ reportDirectory="./report")
   url <- finish(htmlRep)
   browseURL(url)
 ```
+
+
 # **7.2 Plotting fold changes in genomic space**
+
 
 ```{r}
 resGR <- lfcShrink(dds, coef="dex_trt_vs_untrt", type="apeglm", format="GRanges")
@@ -539,7 +668,7 @@ ens.str <- substr(names(resGR), 1, 15)
 resGR$symbol <- mapIds(org.Hs.eg.db, ens.str, "SYMBOL", "ENSEMBL")
 ```
 ```{r}
-#use package for plotting the Granges and associated metadata
+#use package for plotting the ranges and associated metadata
 
 library("Gviz")
 ```
@@ -557,7 +686,9 @@ status <- factor(ifelse(resGRsub$padj < 0.05 & !is.na(resGRsub$padj),
 
 ```
 
-## gvizplot - log2 fold changes in genomic region surroung the gene with smallest adjusted p value
+
+* ### gvizplot - log2 fold changes in genomic region surroung the gene with smallest adjusted p value
+
 ```{r}
 options(ucscChromosomeNames = FALSE)
 g <- GenomeAxisTrack()
@@ -567,7 +698,10 @@ d <- DataTrack(resGRsub, data = "log2FoldChange", baseline = 0,
 plotTracks(list(g, d, a), groupAnnotation = "group",
            notsig = "grey", sig = "hotpink")
 ```
+
+
 # **8.1 Using SVA with DESeq2**
+
 
 ```{r}
 library("sva")
@@ -582,7 +716,8 @@ svseq <- svaseq(dat, mod, mod0, n.sv = 2)
 svseq$sv
 
 ```
-## svaplot - surrogate variables 1 and 2 plotted over cell line
+* ### svaplot - surrogate variables 1 and 2 plotted over cell line
+
 ```{r}
 par(mfrow = c(2, 1), mar = c(3,5,3,1))
 for (i in 1:2) {
@@ -590,6 +725,7 @@ for (i in 1:2) {
   abline(h = 0)
  }
 ```
+
 ```{r}
 # add two surrogate vars as columns to remove any effects on the counts 
 ddssva <- dds
@@ -599,11 +735,14 @@ design(ddssva) <- ~ SV1 + SV2 + dex
 
 ```
 
+
 # **8.2 Using RUV with DESeq2**
+
 
 ```{r}
 library("RUVSeq")
 ```
+
 ```{r}
 set <- newSeqExpressionSet(counts(dds))
 idx  <- rowSums(counts(set) > 5) >= 2
@@ -614,7 +753,9 @@ empirical <- rownames(set)[ rownames(set) %in% not.sig ]
 set <- RUVg(set, empirical, k=2)
 pData(set)
 ```
-## ruvplot - Factors of unwated variation plotted over cell line
+
+* ### ruvplot - Factors of unwated variation plotted over cell line
+
 ```{r}
 par(mfrow = c(2, 1), mar = c(3,5,3,1))
 for (i in 1:2) {
@@ -622,6 +763,7 @@ for (i in 1:2) {
   abline(h = 0)
  }
 ```
+
 ```{r}
 #control the factors by affing them to DESeqDataSet and to the design
 
@@ -632,7 +774,9 @@ design(ddsruv) <- ~ W1 + W2 + dex
 
 ```
 
+
 # **9. Time Course Experiments**
+
 
 ```{r}
 library("fission")
@@ -641,14 +785,17 @@ ddsTC <- DESeqDataSet(fission, ~ strain + minute + strain:minute)
 
 ```
 
-## fissionDE - perform likelihood ratio
+* ### fissionDE - perform likelihood ratio
+
 ```{r}
 ddsTC <- DESeq(ddsTC, test="LRT", reduced = ~ strain + minute)
 resTC <- results(ddsTC)
 resTC$symbol <- mcols(ddsTC)$symbol
 head(resTC[order(resTC$padj),], 4)
 ```
-## fissioncounts - Normalized counts for a gene w/ condition specific-changes over time
+
+* ### fissioncounts - Normalized counts for a gene w/ condition specific-changes over time
+
 ```{r, fig.width=6, fig.height=4.5}
 fiss <- plotCounts(ddsTC, which.min(resTC$padj), 
                    intgroup = c("minute","strain"), returnData = TRUE)
@@ -668,13 +815,16 @@ res30 <- results(ddsTC, name="strainmut.minute30", test="Wald")
 res30[which.min(resTC$padj),]
 
 ```
+
 ```{r}
 # cluster significant genes by their profiles
 betas <- coef(ddsTC)
 colnames(betas)
 
 ```
-## fissionheatmap - Heatmap of log2 fold change for genes w/ smallest adjusted p value
+
+* ### fissionheatmap - Heatmap of log2 fold change for genes w/ smallest adjusted p value
+
 ```{r}
 topGenes <- head(order(resTC$padj),20)
 mat <- betas[topGenes, -c(1,2)]
@@ -686,7 +836,10 @@ pheatmap(mat, breaks=seq(from=-thr, to=thr, length=101),
 
 ```
 
-# 10. **Session Information**
+
+# **10. Session Information**
+
+
 ```{r}
 #reports version numbers of R and all the packages used
 
