@@ -25,6 +25,8 @@ knitr::opts_chunk$set(echo = TRUE)
 * Lab 6 : [Data Maps and Interactive Graphs from the COVID-19 Reporting Data](lab6.html)
 * Lab 7 : [RNA-Seq workflow: Gene-Level Exploratory Analysis & Differential Expression](Lab7.html)
 * Lab 8 : [Sequence Alignment, Phylogenetic Analysis & Tree Visualization](Lab8.html)
+* Lab 9 : [Programming in R - Regular Expressions](lab9.html)
+* Lab 9x: [Programming in R - Control Structures & Functions](lab9x.html)
 
 *Application written in R [@RCoreTeam] using the Shiny framework [@Chang2015].*
 
