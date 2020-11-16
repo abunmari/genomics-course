@@ -1,0 +1,28 @@
+---
+title: "lab12"
+author: "Marisa Abundis"
+date: "11/16/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+### **Cytoscape Exercises**
+#### Basic Data Visualization Graph
+![](images/TutEx1.png)
+
+#### Differentially Expressed Genes Graph
+![](images/TutImage2.png)
+
+
+### **RCy3 Exercises**
+![](data/vignette_image.png)
+
+```{r, include = FALSE}
+library(RCy3)
+cytoscapePing()
+```
+
+
+
