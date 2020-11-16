@@ -28,6 +28,8 @@ knitr::opts_chunk$set(echo = TRUE)
 * Lab 9 : [Programming in R - Regular Expressions](lab9.html)
 * Lab 9x : [Programming in R - Control Structures & Functions](lab9x.html)
 * Lab 10 : [Population genomics based on high throughput sequencing](lab10.html)
+* lab 11:
+* lab 12: [Network analysis using Cytoscape & RCy3](lab12.html)
 
 *Application written in R [@RCoreTeam] using the Shiny framework [@Chang2015].*
 
