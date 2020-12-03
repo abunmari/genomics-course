@@ -1,18 +1,22 @@
 ---
 title: "Evolutionary Genomics & Bioinformatics"
 author: "Marisa Abundis"
-date: "August 31, 2020"
-output: html_document
+output:
+  prettydoc::html_pretty:
+    theme: lenoids
+    highlight: github
 bibliography: data/references.bib
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+<center>
 ![](images/bunnyPortraitIcon.png)
+</center>
 
 ## **LAB FILES**
-
 
 * Lab 1 : [Intro to R](labs/lab1_marisaabundis.html)
 * Lab 2 : [Git, Github, and Rstudio Projects](labs/lab2_MarisaAbundis.html)
@@ -30,6 +34,7 @@ knitr::opts_chunk$set(echo = TRUE)
 * Lab 10 : [Population genomics based on high throughput sequencing](lab10.html)
 * Lab 11: [Microbiome analysis using dada2 and phyloseq](lab11.html)
 * Lab 12: [Network analysis using Cytoscape & RCy3](lab12.html)
+* Lab 13: [Sprucing up your Rmd & GitHub Page](lab13.html)
 
 *Application written in R [@RCoreTeam] using the Shiny framework [@Chang2015].*
 
